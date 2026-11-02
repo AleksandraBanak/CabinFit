@@ -34,7 +34,7 @@ CabinFit is a full-stack e-commerce application for browsing and purchasing lugg
 ### Shopping Cart
 <img width="1656" height="658" alt="Shopping Cart" src="https://github.com/user-attachments/assets/22fb55a9-3ddf-4451-a04b-fcfddc7f7912" />
 <img width="1902" height="905" alt="Shopping Cart" src="https://github.com/user-attachments/assets/63951162-4ad9-48e3-91ea-dfaeb2b7b37a" />
-<img width="1895" height="914" alt="image" src="https://github.com/user-attachments/assets/5e9b20b5-d4b3-4b3d-ab76-b0e56374a60b" />
+<img width="1898" height="907" alt="image" src="https://github.com/user-attachments/assets/48349a02-b5d6-4a1e-a206-fc09ae499ad4" />
 
 ### Order Management
 <img width="1907" height="895" alt="Order Management" src="https://github.com/user-attachments/assets/0610cd71-1b56-4a6a-a863-e3e5ac1f6da0" />
