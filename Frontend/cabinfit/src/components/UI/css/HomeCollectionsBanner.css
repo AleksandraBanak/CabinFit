@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Larken";
+    src: url("/fonts/Larken.woff2") format("woff2");
+}
+
+.collections-banner-section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.collections-banner-top {
+    display: flex;
+    width: 100%;
+    height: 620px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.collections-banner-image-wrap {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.collections-banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.second-image {
+    object-position: 99% 20%;
+    transform: scale(1);
+}
+
+@media (max-width: 1600px) {
+    .second-image {
+        object-position: 60% 20%;
+    }
+}
+
+.collections-banner-center {
+    flex: 1.2;
+    background: #071014;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.collections-banner-center * {
+    color: #fff;
+}
+
+.collections-banner-title {
+    font-family: "Larken", serif !important;
+    margin: 0 0 14px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(2.6rem, 2.6vw, 4.5rem);
+    line-height: 1.04;
+    font-weight: 400;
+    max-width: 1500px;
+}
+
+.collections-banner-eyebrow {
+    margin: 0 0 24px;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+}
+
+.collections-banner-link {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.collections-banner-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 70px;
+    height: 1px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.collections-sale-banner {
+    background-color: #B5CCE0;
+    text-align: center;
+    padding: 18px 20px 28px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collections-sale-banner * {
+    color: #111;
+    font-weight: 600;
+}
+
+.collections-sale-inner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collections-sale-eyebrow,
+.collections-sale-title {
+    width: 100%;
+}
+
+.collections-sale-eyebrow {
+    font-family: "GT-America-Ex", sans-serif;
+    margin: 0 0 6px;
+    font-size: 17px;
+    line-height: 1;
+    letter-spacing: .13em;
+}
+
+.collections-sale-title {
+    margin: 0 0 20px;
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 57px;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    font-feature-settings: normal !important;
+}
+
+.collections-sale-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    height: 48px;
+    padding: 0 24px;
+    border: 1px solid #111;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.collections-sale-button:hover {
+    background: #111;
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .collections-banner-top {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .collections-banner-center {
+        padding: 20px;
+    }
+
+    .collections-banner-image-wrap {
+        height: 400px;
+    }
+
+    .collections-banner-center {
+        height: 300px;
+        padding: 3% 30px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .home-promo-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 0px 0px;
+    }
+
+    .home-promo-image-wrap {
+        aspect-ratio: none;
+    }
+
+    .slider-btn.right {
+        right: -5px;
+    }
+
+    .slider-container .card {
+        margin-left: 9px;
+    }
+}

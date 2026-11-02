@@ -1,0 +1,54 @@
+.voucher-pill{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background: #ffffffd6;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.voucher-pill:hover{
+  background: rgba(95, 97, 100, 0.177);
+}
+
+.voucher-code{
+  letter-spacing: .02em;
+  text-decoration: underline;
+  text-underline-offset: calc(2px);
+  text-decoration-color: gray;
+}
+
+.voucher-discount{
+  font-weight: 700;
+}
+
+.profile-container{
+  padding-left: 0;
+}
+
+.profile-field{
+  border: rgba(128, 128, 128, 0.049) 1px solid;
+  background-color: #c8d6e85e ;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.profile-field:hover {
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.092);
+}
+
+input.profile-field{
+  border: 1px solid rgba(15, 23, 42, 0.34);
+}
+
+input.profile-field:hover{
+  border-color: rgba(15, 23, 42, 0.22);
+}
+
+input.profile-field:focus,
+input.profile-field:focus-visible{
+  border: 1px solid #3b83f667;
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(59, 131, 246, 0.201);
+}

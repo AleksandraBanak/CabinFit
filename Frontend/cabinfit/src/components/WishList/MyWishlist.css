@@ -1,0 +1,20 @@
+.wishlist-title {
+  font-size: 1.98rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.wishlist-breadcrumb {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.wishlist-empty h4 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.wishlist-empty p {
+  color: #666;
+}

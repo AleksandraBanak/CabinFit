@@ -1,0 +1,34 @@
+# .NET build output
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio settings and caches
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.pubxml.user
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Backend configuration currently containing credentials
+/Backend/CabinFit/CabinFit.Api/appsettings.json
+/Backend/CabinFit/CabinFit.Api/appsettings.Local.json
+
+# Local HTTPS certificates found in your frontend
+/Frontend/cabinfit/localhost-key.pem
+/Frontend/cabinfit/localhost.pem
+
+# Existing backup archive
+/Backend.zip
+
+# Logs
+*.log

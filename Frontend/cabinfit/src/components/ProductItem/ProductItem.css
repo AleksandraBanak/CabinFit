@@ -1,0 +1,280 @@
+.outOfStock{
+    width: 48%;
+}
+
+.minimal-card {
+    border: none;
+    background: #fff;
+    transition: transform 0.3s ease;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+
+.minimal-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Area */
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    margin-bottom: 18px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+     background: linear-gradient(
+    to bottom,
+    #f9f5f5,
+    #f0efef
+  );
+}
+
+
+.product-img {
+    mix-blend-mode: multiply;
+    transition: transform 0.5s ease;
+    pointer-events: none;
+}
+
+.minimal-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+/* Navigation Arrows */
+.nav-arrow-btn {
+    position: absolute;
+    top: 60%;
+    /* background: rgb(255, 255, 255); */
+    background: transparent;
+    border: none;
+    color: #000;
+    /* width: 40px;
+    height: 40px;
+    padding-right: 30px; */
+    /* display: none; */
+}
+
+.nav-arrow-btn:hover {
+    background: #817a7a3e;
+    border: none !important;
+}
+
+.image-wrapper:hover .nav-arrow-btn {
+    opacity: 1;
+}
+
+.badge-container {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.status-badge {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.badge-red { background-color: #d32f2f; }
+.badge-black { background-color: #1a1a1a; }
+
+.product-details {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.product-dims-text {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.current-price {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1a1a1a;
+}
+
+.was-price {
+    font-size: 0.85rem;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.btn-add-cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #1a1a1a4f; 
+  color: #ffffff;
+  border: 1px solid #1a1a1a00;
+  padding: 12px 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-add-cart:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+.btn-add-cart:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cart-span{
+   letter-spacing: 1px;
+   font-weight: 700;
+}
+
+.btn-black-rect {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #1a1a1a;
+    border-radius: 0;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-black-rect:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.btn-black-rect:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+.admin-toolbar {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.admin-link {
+    font-size: 0.75rem;
+    color: #666;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.admin-link:hover { color: #000; }
+.text-danger { color: #dc3545; }
+
+.discounted {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.was-price {
+  font-size: 0.85rem;
+  color: #999;
+  text-decoration: line-through;
+  margin-right: 6px;
+}
+
+.savings-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #c0392b;
+  display: inline-block;
+}
+
+.comp-value {
+  font-size: 0.8rem;
+  color: #999;
+  text-decoration: line-through;
+  margin-top: 2px;
+}
+
+.discount-overlay-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #c0392b;
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    z-index: 10;
+    border-radius: 2px;
+}
+
+
+.minimal-card {
+    height: 100%;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.wishlist-heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  color: #000;
+  opacity: 0.7;
+
+  transition: all 0.2s ease;
+}
+
+.wishlist-heart:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.wishlist-heart.active {
+  color: #000;
+}
+
+.wishlist-heart.active svg {
+  fill: black;/
+}

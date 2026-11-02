@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap');
+
+body {
+  background-color: white;
+}
+
+.login-card {
+  border: none;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 20px;
+}
+
+@media (max-width: 2500px) {
+  .login-card{
+    margin-top: 35px !important;
+    margin-bottom: 25px !important;
+  }
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.login-image-col {
+  background-image: url('../../assets/LoginImage.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  position: relative;
+}
+
+.login-image-col::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; width: 100%; height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.image-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 3rem;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px !important;
+  padding: 12px;
+}
+.btn-black:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.social-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.social-btn:hover {
+  background-color: #f8f9fa;
+}
+
+.btn-light-custom {
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+  padding: 10px;
+}
+
+.forgot-password-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.8rem;
+  color: #555;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+  cursor: pointer;
+}
+
+.forgot-password-link:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+.forgot-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.forgot-modal-box {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  max-width: 550px;
+  padding: 48px 32px 36px;
+  border-radius: 4px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.forgot-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: #222;
+  cursor: pointer;
+}
+
+.forgot-modal-title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.forgot-modal-text {
+  font-size: 1.0rem;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+.forgot-modal-label {
+  font-size: 0.90rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.forgot-modal-input {
+  height: 45px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.forgot-modal-submit {
+  width: 100%;
+  background: #0d0a05;
+  color: #fff;
+  border: none;
+  height: 2.8rem;
+  font-size: 0.92rem;
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  margin-bottom: 22px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.forgot-modal-submit:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.forgot-modal-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.forgot-modal-cancel {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: none;
+  font-size: 0.92rem !important;
+  letter-spacing: 0.18em;
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #5d5959;
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  .forgot-modal-box {
+    padding: 36px 22px 28px;
+  }
+
+  .forgot-modal-title {
+    font-size: 1.6rem;
+  }
+
+  .forgot-modal-text {
+    font-size: 0.95rem;
+  }
+
+  .forgot-modal-input,
+  .forgot-modal-submit {
+    height: 54px;
+  }
+}
+
+.required-label-login::before {
+  content: "*";
+  color: #210505;
+  font-size: 0.59rem;      
+  margin-right: 3px;
+  position: relative;
+  top: -3.9px             
+}

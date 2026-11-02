@@ -1,0 +1,22 @@
+.star-input{
+  display:flex;
+  gap:4px;
+  line-height:1;
+}
+
+.star-btn{
+  border:none;
+  background:transparent;
+  padding:0;
+  cursor:pointer;
+  color:#cfcfcf;
+}
+
+.star-btn.filled{
+  color:#1a1a1a;
+}
+
+.star-input.is-disabled .star-btn{
+  cursor:not-allowed;
+  opacity:0.7;
+}

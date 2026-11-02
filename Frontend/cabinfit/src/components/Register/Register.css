@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap');
+
+.login-card {
+  border: none;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  line-height: 1.1;
+}
+
+.login-image-col {
+  background-image: url('../../assets/LoginImage.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  position: relative;
+}
+
+.login-image-col::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; width: 100%; height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.image-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 3rem;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+  padding: 12px;
+}
+.btn-black:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.social-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.social-btn:hover {
+  background-color: #f8f9fa;
+}
+
+.btn-light-custom {
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+  padding: 10px;
+}
+
+.register-form-col {
+  padding: 1.75rem !important;
+}
+
+.form-label{
+  margin-bottom: 0.3rem;
+}
+
+.required-label::before {
+  content: "*";
+  color: #751818;
+  font-size: 0.59rem;      
+  margin-right: 3px;
+  position: relative;
+  top: -3.9px             
+}
+
+.field-error {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px !important;
+  font-size: 0.83rem;
+  padding-left: 2px;
+  color: #751b11;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.form-control.is-invalid {
+  border-color: #d9534f;
+}
+
+.bi-circle-fill {
+  font-size: 0.282rem;
+  vertical-align: 3px;
+  margin-right: 2px;
+  color: #751b11da;
+}

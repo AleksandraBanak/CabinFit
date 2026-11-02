@@ -1,0 +1,43 @@
+.driver-nav,
+.driver-nav * {
+  font-family: "GT-America-Ex", sans-serif;
+}
+
+.driver-nav {
+  min-height: 72px;
+  letter-spacing: 0.04em;
+}
+
+.driver-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: #111;
+}
+
+.driver-nav .nav-link {
+  position: relative;
+  color: #111;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  padding: 0.5rem 0.25rem;
+}
+
+.driver-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0%;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.25s ease;
+}
+
+.driver-nav .nav-link:hover::after,
+.driver-nav .nav-link.active::after {
+  width: 100%;
+}

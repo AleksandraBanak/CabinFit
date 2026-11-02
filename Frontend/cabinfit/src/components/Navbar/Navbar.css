@@ -1,0 +1,196 @@
+.mainNav {
+  border-bottom: 1px solid #e5e5e5;
+  letter-spacing: .06em;
+  font-size: 15px;
+}
+
+nav.mainNav,
+nav.mainNav * {
+  font-family: "GT-America-Ex", sans-serif;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.black-top {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-p {
+  margin: 0;
+  letter-spacing: .10em;
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.cabinfit-logo,
+.cabinfit-logo * {
+  font-size: 25px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.cabinfit-logo i {
+  font-size: 25px;
+  margin-left: 3rem;
+}
+
+.navbar .nav-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  bottom: 8px;
+
+  width: 0%;
+  height: 1px;
+  background-color: currentColor;
+
+  transition: width 0.25s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 85%;
+}
+
+.navbar .nav-link.active::after {
+  width: 83%;
+}
+
+.btn-profile {
+  background: transparent !important;
+  border: none !important;
+  padding: 6px;
+}
+
+.btn-profile i {
+  padding-left: 20px;
+}
+
+.btn-profile:hover i {
+  opacity: 0.7;
+}
+
+.cart-badge {
+  font-size: 0.7rem !important;
+  padding-left: 8px;
+}
+
+.profile-dropdown-menu {
+  min-width: 140px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  padding: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  border: #d4d3d341 solid 1px;
+  box-shadow: 0 8px 17px #aaaaaaa1;
+}
+
+.guest-dropdown-menu {
+  min-width: 150px;
+}
+
+.profile-dropdown-item {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 9px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.profile-dropdown-item.active {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+.profile-dropdown-item:hover {
+  background-color: #c9c4c4 !important;
+  color: black !important;
+}
+
+.dropdown-item:active {
+  background-color: #e9e9e9;
+  color: #111;
+}
+
+@media (max-width: 1200px) {
+  .nav-center {
+    position: static;
+    left: auto;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .mainNav .navbar-collapse {
+    display: flex !important;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .mainNav form[role="search"] {
+    width: 180px;
+  }
+
+  .cabinfit-logo i {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 867.98px) {
+  .cabinfit-logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-center {
+    position: absolute;
+  }
+}
+
+@media (max-width: 600.98px) {
+  .mainNav form[role="search"] {
+    display: none;
+  }
+}
+
+@media (max-width: 400.98px) {
+  .cabinfit-logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 14px !important;
+  }
+}

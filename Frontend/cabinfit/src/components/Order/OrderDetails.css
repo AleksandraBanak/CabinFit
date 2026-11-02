@@ -1,0 +1,149 @@
+.order-header-banner {
+  height: 220px;
+  border-bottom: 1px solid rgba(222, 226, 230, 1);
+  background-color: rgba(224, 229, 236, 1);
+}
+
+.order-content-wrapper {
+  margin-top: -145px !important;
+  max-width: 1200px;
+  
+}
+
+.table-col-product {
+  width: 50%;
+}
+
+.product-img-container {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 16px !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  background: #fff;
+}
+
+.product-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.spacer-bottom {
+  height: 50px;
+}
+
+.status {
+  font-weight: 500;
+}
+
+.letter-spacing {
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 1600px) {
+  .order-content-wrapper {
+    max-width: 1100px !important;
+  }
+}
+
+.main-orderDetails-card {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.main-orderDetails-card h5 {
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.main-orderDetails-card label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #6b7280 !important;
+  margin-bottom: 10px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.info-field {
+  min-height: 58px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background-color: #c8d6e87a;
+  border: 1px solid rgba(112, 113, 116, 0.06);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  color: #1f2937;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.bg-light-field{
+  background-color: #c8d6e87a ;
+}
+
+.info-field:hover {
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+.table thead th {
+  background: transparent !important;
+  color: #6b7280 !important;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-table{
+  padding-right: 20px !important;
+}
+
+.table tbody tr td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+.order-total-card {
+  background: #ffffff;
+  border: 1px solid rgba(71, 82, 107, 0.064);
+  border-radius: 20px;
+  padding: 22px 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  background-color: #c8d6e87a ;
+}
+
+.order-total-label {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.order-total-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1;
+}
+
+.order-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+}
+
+.back-btn{
+  box-shadow: 3px 4px 5px #8888884a !important;
+}
